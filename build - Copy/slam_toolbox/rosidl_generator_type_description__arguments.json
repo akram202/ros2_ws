@@ -1,0 +1,32 @@
+{
+  "package_name": "slam_toolbox",
+  "output_dir": "/home/akram00/ros2_ws/build/slam_toolbox/rosidl_generator_type_description/slam_toolbox",
+  "idl_tuples": [
+    "/home/akram00/ros2_ws/build/slam_toolbox/rosidl_adapter/slam_toolbox:msg/LocalizedLaserScan.idl",
+    "/home/akram00/ros2_ws/build/slam_toolbox/rosidl_adapter/slam_toolbox:srv/Pause.idl",
+    "/home/akram00/ros2_ws/build/slam_toolbox/rosidl_adapter/slam_toolbox:srv/Reset.idl",
+    "/home/akram00/ros2_ws/build/slam_toolbox/rosidl_adapter/slam_toolbox:srv/ClearQueue.idl",
+    "/home/akram00/ros2_ws/build/slam_toolbox/rosidl_adapter/slam_toolbox:srv/ToggleInteractive.idl",
+    "/home/akram00/ros2_ws/build/slam_toolbox/rosidl_adapter/slam_toolbox:srv/Clear.idl",
+    "/home/akram00/ros2_ws/build/slam_toolbox/rosidl_adapter/slam_toolbox:srv/SaveMap.idl",
+    "/home/akram00/ros2_ws/build/slam_toolbox/rosidl_adapter/slam_toolbox:srv/LoopClosure.idl",
+    "/home/akram00/ros2_ws/build/slam_toolbox/rosidl_adapter/slam_toolbox:srv/MergeMaps.idl",
+    "/home/akram00/ros2_ws/build/slam_toolbox/rosidl_adapter/slam_toolbox:srv/AddSubmap.idl",
+    "/home/akram00/ros2_ws/build/slam_toolbox/rosidl_adapter/slam_toolbox:srv/DeserializePoseGraph.idl",
+    "/home/akram00/ros2_ws/build/slam_toolbox/rosidl_adapter/slam_toolbox:srv/SerializePoseGraph.idl",
+    "/home/akram00/ros2_ws/build/slam_toolbox/rosidl_adapter/slam_toolbox:msg/NewNodeEvent.idl",
+    "/home/akram00/ros2_ws/build/slam_toolbox/rosidl_adapter/slam_toolbox:msg/LoopClosureEvent.idl",
+    "/home/akram00/ros2_ws/build/slam_toolbox/rosidl_adapter/slam_toolbox:msg/GraphNode.idl",
+    "/home/akram00/ros2_ws/build/slam_toolbox/rosidl_adapter/slam_toolbox:msg/GraphEdge.idl",
+    "/home/akram00/ros2_ws/build/slam_toolbox/rosidl_adapter/slam_toolbox:msg/PoseGraph.idl"
+  ],
+  "include_paths": [
+    "builtin_interfaces:/opt/ros/lyrical/share/builtin_interfaces/",
+    "geometry_msgs:/opt/ros/lyrical/share/geometry_msgs/",
+    "std_msgs:/opt/ros/lyrical/share/std_msgs/",
+    "nav_msgs:/opt/ros/lyrical/share/nav_msgs/",
+    "service_msgs:/opt/ros/lyrical/share/service_msgs/",
+    "visualization_msgs:/opt/ros/lyrical/share/visualization_msgs/",
+    "sensor_msgs:/opt/ros/lyrical/share/sensor_msgs/"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/akram00/ros2_ws/build/explore_lite/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

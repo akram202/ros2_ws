@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/akram00/ros2_ws/build/robot_cleaner_sim/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/akram00/ros2_ws/src/robot_cleaner_sim" FILES "/home/akram00/ros2_ws/build/robot_cleaner_sim/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robot_cleaner_sim" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

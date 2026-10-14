@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/akram00/ros2_ws/src/m-explore-ros2/explore" FILES "/home/akram00/ros2_ws/build/explore_lite/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/explore_lite")

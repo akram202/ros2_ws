@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/akram00/ros2_ws/src/m-explore-ros2/explore_lite_msgs" FILES "/home/akram00/ros2_ws/build/explore_lite_msgs/rosidl_adapter/explore_lite_msgs/msg/ExploreStatus.idl" "DESTINATION" "share/explore_lite_msgs/msg")

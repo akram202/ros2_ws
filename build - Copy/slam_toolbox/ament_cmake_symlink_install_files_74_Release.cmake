@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/akram00/ros2_ws/src/slam_toolbox" FILES "/home/akram00/ros2_ws/build/slam_toolbox/ament_cmake_index/share/ament_index/resource_index/slam_toolbox__pluginlib__plugin/slam_toolbox" "DESTINATION" "share/ament_index/resource_index/slam_toolbox__pluginlib__plugin")

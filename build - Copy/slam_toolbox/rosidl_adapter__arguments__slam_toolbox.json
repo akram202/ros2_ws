@@ -1,0 +1,22 @@
+{
+  "package_name": "slam_toolbox",
+  "non_idl_tuples": [
+    "/home/akram00/ros2_ws/src/slam_toolbox:msg/LocalizedLaserScan.msg",
+    "/home/akram00/ros2_ws/src/slam_toolbox:srv/Pause.srv",
+    "/home/akram00/ros2_ws/src/slam_toolbox:srv/Reset.srv",
+    "/home/akram00/ros2_ws/src/slam_toolbox:srv/ClearQueue.srv",
+    "/home/akram00/ros2_ws/src/slam_toolbox:srv/ToggleInteractive.srv",
+    "/home/akram00/ros2_ws/src/slam_toolbox:srv/Clear.srv",
+    "/home/akram00/ros2_ws/src/slam_toolbox:srv/SaveMap.srv",
+    "/home/akram00/ros2_ws/src/slam_toolbox:srv/LoopClosure.srv",
+    "/home/akram00/ros2_ws/src/slam_toolbox:srv/MergeMaps.srv",
+    "/home/akram00/ros2_ws/src/slam_toolbox:srv/AddSubmap.srv",
+    "/home/akram00/ros2_ws/src/slam_toolbox:srv/DeserializePoseGraph.srv",
+    "/home/akram00/ros2_ws/src/slam_toolbox:srv/SerializePoseGraph.srv",
+    "/home/akram00/ros2_ws/src/slam_toolbox:msg/NewNodeEvent.msg",
+    "/home/akram00/ros2_ws/src/slam_toolbox:msg/LoopClosureEvent.msg",
+    "/home/akram00/ros2_ws/src/slam_toolbox:msg/GraphNode.msg",
+    "/home/akram00/ros2_ws/src/slam_toolbox:msg/GraphEdge.msg",
+    "/home/akram00/ros2_ws/src/slam_toolbox:msg/PoseGraph.msg"
+  ]
+}
