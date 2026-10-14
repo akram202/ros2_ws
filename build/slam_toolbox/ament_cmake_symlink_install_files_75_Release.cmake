@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/akram00/ros2_ws/src/slam_toolbox" FILES "/home/akram00/ros2_ws/build/slam_toolbox/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/slam_toolbox/cmake")

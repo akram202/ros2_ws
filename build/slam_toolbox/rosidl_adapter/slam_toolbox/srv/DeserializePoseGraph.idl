@@ -1,0 +1,37 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from slam_toolbox/srv/DeserializePoseGraph.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose.idl"
+
+module slam_toolbox {
+  module srv {
+    module DeserializePoseGraph_Request_Constants {
+      const int8 UNSET = 0;
+      const int8 START_AT_FIRST_NODE = 1;
+      const int8 START_AT_GIVEN_POSE = 2;
+      const int8 LOCALIZE_AT_POSE = 3;
+    };
+    struct DeserializePoseGraph_Request {
+      @verbatim (language="comment", text=
+        "inital_pose should be Map -> base_frame (parameter, generally base_link)")
+      string filename;
+
+      int8 match_type;
+
+      geometry_msgs::msg::Pose initial_pose;
+    };
+    module DeserializePoseGraph_Response_Constants {
+      @verbatim (language="comment", text=
+        "Result code definitions")
+      const uint8 RESULT_SUCCESS = 0;
+      const uint8 RESULT_INVALID_FILENAME = 1;
+      const uint8 RESULT_INVALID_PROCESSOR_TYPE = 2;
+      const uint8 RESULT_FAILED_TO_READ_FILE = 3;
+      const uint8 RESULT_UNDEFINED_FAILURE = 255;
+    };
+    struct DeserializePoseGraph_Response {
+      uint8 result;
+    };
+  };
+};

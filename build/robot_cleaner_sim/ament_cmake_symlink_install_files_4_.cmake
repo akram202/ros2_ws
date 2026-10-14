@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/akram00/ros2_ws/src/robot_cleaner_sim" FILES "/opt/ros/lyrical/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/robot_cleaner_sim/environment")

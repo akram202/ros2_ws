@@ -1,0 +1,60 @@
+[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+-- The C compiler identification is GNU 15.2.0
+-- The CXX compiler identification is GNU 15.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclpy: 10.0.11 (/opt/ros/lyrical/share/rclpy/cmake)
+-- Found nav2_msgs: 1.5.1 (/opt/ros/lyrical/share/nav2_msgs/cmake)
+-- Found rosidl_generator_c: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found sensor_msgs: 5.9.3 (/opt/ros/lyrical/share/sensor_msgs/cmake)
+-- Configuring done (3.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/akram00/ros2_ws/build/robot_cleaner_sim
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/urdf/robot.urdf.xacro
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/worlds/cleaner_world.sdf
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/launch/autonomous_mapping.launch.py
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/launch/sim.launch.py
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/launch/simulation.launch.py
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/config/bridge.yaml
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/config/nav2_params.yaml
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/config/robot.rviz
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/lib/robot_cleaner_sim/simple_nav2_server.py
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/ament_index/resource_index/package_run_dependencies/robot_cleaner_sim
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/ament_index/resource_index/parent_prefix_path/robot_cleaner_sim
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/environment/ament_prefix_path.sh
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/environment/ament_prefix_path.dsv
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/environment/path.sh
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/environment/path.dsv
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/local_setup.bash
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/local_setup.fish
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/local_setup.sh
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/local_setup.zsh
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/local_setup.dsv
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/package.dsv
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/ament_index/resource_index/packages/robot_cleaner_sim
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/cmake/robot_cleaner_simConfig.cmake
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/cmake/robot_cleaner_simConfig-version.cmake
+-- Symlinking: /home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/package.xml

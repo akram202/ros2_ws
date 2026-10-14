@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<robot name="cleaner_bot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- ============ PROPERTIES ============ -->
+  <!-- Cylinder chassis properties: 0.35m diameter (0.175m radius), 0.10m height -->
+  <xacro:property name="chassis_radius" value="0.175"/>
+  <xacro:property name="chassis_height" value="0.10"/>
+  
+  <!-- Actuated drive wheel properties -->
+  <xacro:property name="wheel_radius"   value="0.05"/>
+  <xacro:property name="wheel_width"    value="0.04"/>
+  <!-- Recessed wheels on both sides (Roomba style) -->
+  <xacro:property name="wheel_offset_y" value="0.15"/>
+
+  <!-- ============ BASE FOOTPRINT ============ -->
+  <!-- Reference point on the floor directly beneath the robot center -->
+  <link name="base_footprint"/>
+
+  <joint name="base_footprint_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child  link="base_link"/>
+    <!-- The base_link is at Z = 0.06m above the ground, giving 1cm of clearance -->
+    <origin xyz="0 0 0.06" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ============ CHASSIS (Cylinder) ============ -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <cylinder radius="${chassis_radius}" length="${chassis_height}"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0.2 0.4 0.8 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="${chassis_radius}" length="${chassis_height}"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <!-- Mass is 2.0 kg -->
+      <mass value="2.0"/>
+      <!-- Cylinder inertia math: 
+           Ixx = Iyy = (1/12) * M * (3 * R^2 + H^2) = 0.1667 * (3*0.030625 + 0.01) = 0.017
+           Izz = (1/2) * M * R^2 = 0.5 * 2.0 * 0.030625 = 0.031 -->
+      <inertia ixx="0.017" ixy="0" ixz="0"
+               iyy="0.017" iyz="0" izz="0.031"/>
+    </inertial>
+  </link>
+
+  <!-- ============ LEFT DRIVE WHEEL ============ -->
+  <link name="left_wheel">
+    <visual>
+      <geometry>
+        <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0.1 0.1 0.1 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.3"/>
+      <!-- Wheel inertia math:
+           Ixx = Iyy = (1/12) * M * (3 * R^2 + H^2) = 0.025 * (3*0.0025 + 0.0016) = 0.000227
+           Izz = (1/2) * M * R^2 = 0.5 * 0.3 * 0.0025 = 0.000375 -->
+      <inertia ixx="0.000227" ixy="0" ixz="0"
+               iyy="0.000227" iyz="0" izz="0.000375"/>
+    </inertial>
+  </link>
+
+  <joint name="left_wheel_joint" type="continuous">
+    <parent link="base_link"/>
+    <child  link="left_wheel"/>
+    <!-- Positioned to touch the ground exactly (Z = 0.05m above ground, base_link is at 0.06m) -->
+    <origin xyz="0 ${wheel_offset_y} -0.01" rpy="-1.57079632679 0 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <!-- ============ RIGHT DRIVE WHEEL ============ -->
+  <link name="right_wheel">
+    <visual>
+      <geometry>
+        <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0.1 0.1 0.1 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.3"/>
+      <inertia ixx="0.000227" ixy="0" ixz="0"
+               iyy="0.000227" iyz="0" izz="0.000375"/>
+    </inertial>
+  </link>
+
+  <joint name="right_wheel_joint" type="continuous">
+    <parent link="base_link"/>
+    <child  link="right_wheel"/>
+    <origin xyz="0 -${wheel_offset_y} -0.01" rpy="-1.57079632679 0 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <!-- ============ FRONT PASSIVE CASTER WHEEL ============ -->
+  <link name="front_caster">
+    <visual>
+      <geometry>
+        <sphere radius="0.025"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.025"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.000025" ixy="0" ixz="0"
+               iyy="0.000025" iyz="0" izz="0.000025"/>
+    </inertial>
+  </link>
+
+  <joint name="front_caster_joint" type="fixed">
+    <parent link="base_link"/>
+    <child  link="front_caster"/>
+    <!-- Placed forward, touching the ground (Z = 0.025m above ground, base_link is at 0.06m) -->
+    <origin xyz="0.12 0 -0.035" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ============ REAR PASSIVE CASTER WHEEL ============ -->
+  <link name="rear_caster">
+    <visual>
+      <geometry>
+        <sphere radius="0.025"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.025"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.000025" ixy="0" ixz="0"
+               iyy="0.000025" iyz="0" izz="0.000025"/>
+    </inertial>
+  </link>
+
+  <joint name="rear_caster_joint" type="fixed">
+    <parent link="base_link"/>
+    <child  link="rear_caster"/>
+    <!-- Placed backward, touching the ground -->
+    <origin xyz="-0.12 0 -0.035" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ============ LiDAR SENSOR (2D Laser Scanner) ============ -->
+  <link name="laser_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.04" length="0.05"/>
+      </geometry>
+      <material name="red">
+        <color rgba="0.8 0.1 0.1 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.04" length="0.05"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.15"/>
+      <!-- Ixx = Iyy = (1/12) * M * (3*R^2 + H^2) = 0.0125 * (3*0.0016 + 0.0025) = 0.000091
+           Izz = (1/2) * M * R^2 = 0.5 * 0.15 * 0.0016 = 0.00012 -->
+      <inertia ixx="0.000091" ixy="0" ixz="0"
+               iyy="0.000091" iyz="0" izz="0.00012"/>
+    </inertial>
+  </link>
+
+  <joint name="laser_joint" type="fixed">
+    <parent link="base_link"/>
+    <child  link="laser_link"/>
+    <!-- Placed flat on top of the base_link cylinder (top is at Z = 0.05m in base_link) -->
+    <origin xyz="0.0 0 0.075" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ============ GAZEBO PHYSICS & FRICTION ============ -->
+  <gazebo reference="left_wheel">
+    <mu1 value="1.0"/>
+    <mu2 value="1.0"/>
+  </gazebo>
+
+  <gazebo reference="right_wheel">
+    <mu1 value="1.0"/>
+    <mu2 value="1.0"/>
+  </gazebo>
+
+  <gazebo reference="front_caster">
+    <mu1 value="0.0"/>
+    <mu2 value="0.0"/>
+  </gazebo>
+
+  <gazebo reference="rear_caster">
+    <mu1 value="0.0"/>
+    <mu2 value="0.0"/>
+  </gazebo>
+
+  <!-- ============ GAZEBO PLUGINS ============ -->
+
+  <!-- Diff-Drive plugin for differential kinematics -->
+  <gazebo>
+    <plugin filename="gz-sim-diff-drive-system"
+            name="gz::sim::systems::DiffDrive">
+      <left_joint>left_wheel_joint</left_joint>
+      <right_joint>right_wheel_joint</right_joint>
+      <wheel_separation>${wheel_offset_y * 2}</wheel_separation>
+      <wheel_radius>${wheel_radius}</wheel_radius>
+      <odom_publish_frequency>20</odom_publish_frequency>
+      <topic>/model/cleaner_bot/cmd_vel</topic>
+      <odom_topic>/model/cleaner_bot/odom</odom_topic>
+      <tf_topic>/model/cleaner_bot/tf</tf_topic>
+      <frame_id>odom</frame_id>
+      <child_frame_id>base_footprint</child_frame_id>
+    </plugin>
+  </gazebo>
+
+  <!-- 2D LiDAR Sensor (gpu_lidar) -->
+  <gazebo reference="laser_link">
+    <sensor name="laser" type="gpu_lidar">
+      <gz_frame_id>laser_link</gz_frame_id>
+      <pose>0 0 0 0 0 0</pose>
+      <topic>/scan</topic>
+      <update_rate>10</update_rate>
+      <lidar>
+        <scan>
+          <horizontal>
+            <samples>360</samples>
+            <resolution>1</resolution>
+            <!-- Complete 360-degree sweep for full coverage -->
+            <min_angle>-3.14159265359</min_angle>
+            <max_angle>3.14159265359</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.20</min>
+          <max>12.0</max>
+          <resolution>0.01</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </lidar>
+      <visualize>true</visualize>
+    </sensor>
+  </gazebo>
+
+  <!-- Joint State Publisher plugin to publish wheel rotations to Gazebo -->
+  <gazebo>
+    <plugin filename="gz-sim-joint-state-publisher-system"
+            name="gz::sim::systems::JointStatePublisher">
+      <topic>/model/cleaner_bot/joint_states</topic>
+      <joint_name>left_wheel_joint</joint_name>
+      <joint_name>right_wheel_joint</joint_name>
+    </plugin>
+  </gazebo>
+
+</robot>

@@ -1,0 +1,85 @@
+-- The C compiler identification is GNU 15.2.0
+-- The CXX compiler identification is GNU 15.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- BuilD for ROS2: lyrical
+-- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 32.0.3 (/opt/ros/lyrical/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.10.2 (/opt/ros/lyrical/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 9.4.10 (/opt/ros/lyrical/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found std_msgs: 5.9.3 (/opt/ros/lyrical/share/std_msgs/cmake)
+-- Found sensor_msgs: 5.9.3 (/opt/ros/lyrical/share/sensor_msgs/cmake)
+-- Found tf2_ros: 0.45.10 (/opt/ros/lyrical/share/tf2_ros/cmake)
+-- Found tf2_geometry_msgs: 0.45.10 (/opt/ros/lyrical/share/tf2_geometry_msgs/cmake)
+-- Found nav2_msgs: 1.5.1 (/opt/ros/lyrical/share/nav2_msgs/cmake)
+-- Found map_msgs: 2.6.1 (/opt/ros/lyrical/share/map_msgs/cmake)
+-- Found visualization_msgs: 5.9.3 (/opt/ros/lyrical/share/visualization_msgs/cmake)
+-- Found nav2_costmap_2d: 1.5.1 (/opt/ros/lyrical/share/nav2_costmap_2d/cmake)
+-- Found explore_lite_msgs: 1.0.0 (/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake)
+-- Found ament_lint_auto: 0.20.6 (/opt/ros/lyrical/share/ament_lint_auto/cmake)
+-- Found ament_cmake_gtest: 2.8.8 (/opt/ros/lyrical/share/ament_cmake_gtest/cmake)
+-- Found GTest: /usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake (found version "1.17.0")
+-- Found Threads: TRUE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/akram00/ros2_ws/src/m-explore-ros2/explore/include;$<BUILD_INTERFACE:/home/akram00/ros2_ws/src/m-explore-ros2/explore/include>;/home/akram00/ros2_ws/src/m-explore-ros2/explore/
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (4.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/akram00/ros2_ws/build/explore_lite
+[ 16%] [32mBuilding CXX object CMakeFiles/test_explore.dir/test/test_explore.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/explore.dir/src/costmap_client.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/explore.dir/src/explore.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/explore.dir/src/frontier_search.cpp.o[0m
+[ 83%] [1m[32mLinking CXX executable test_explore[0m
+[ 83%] Built target test_explore
+[100%] [1m[32mLinking CXX executable explore[0m
+[100%] Built target explore
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/include/explore//costmap_client.h
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/include/explore//costmap_tools.h
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/include/explore//explore.h
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/include/explore//frontier_search.h
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/share/explore_lite/config/params.yaml
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/share/explore_lite/config/params_costmap.yaml
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/share/explore_lite/launch/explore.launch.py
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/lib/explore_lite/explore
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/share/ament_index/resource_index/package_run_dependencies/explore_lite
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/share/ament_index/resource_index/parent_prefix_path/explore_lite
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/share/explore_lite/environment/ament_prefix_path.sh
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/share/explore_lite/environment/ament_prefix_path.dsv
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/share/explore_lite/environment/path.sh
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/share/explore_lite/environment/path.dsv
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/share/explore_lite/local_setup.bash
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/share/explore_lite/local_setup.fish
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/share/explore_lite/local_setup.sh
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/share/explore_lite/local_setup.zsh
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/share/explore_lite/local_setup.dsv
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/share/explore_lite/package.dsv
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/share/ament_index/resource_index/packages/explore_lite
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/share/explore_lite/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/share/explore_lite/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/share/explore_lite/cmake/explore_liteConfig.cmake
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/share/explore_lite/cmake/explore_liteConfig-version.cmake
+-- Symlinking: /home/akram00/ros2_ws/install/explore_lite/share/explore_lite/package.xml

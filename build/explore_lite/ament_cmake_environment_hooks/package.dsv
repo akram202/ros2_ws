@@ -1,0 +1,5 @@
+source;share/explore_lite/local_setup.bash
+source;share/explore_lite/local_setup.dsv
+source;share/explore_lite/local_setup.fish
+source;share/explore_lite/local_setup.sh
+source;share/explore_lite/local_setup.zsh

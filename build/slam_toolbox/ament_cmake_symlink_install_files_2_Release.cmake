@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/akram00/ros2_ws/src/slam_toolbox" FILES "/home/akram00/ros2_ws/build/slam_toolbox/rosidl_generator_type_description/slam_toolbox/srv/Pause.json" "DESTINATION" "share/slam_toolbox/srv")

@@ -1,0 +1,1 @@
+/home/akram00/ros2_ws/src/robot_cleaner_sim/robot_cleaner_sim/simple_nav2_server.py

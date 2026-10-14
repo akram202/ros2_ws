@@ -1,0 +1,27 @@
+[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+[01m[K/home/akram00/ros2_ws/src/m-explore-ros2/explore/src/costmap_client.cpp:[m[K In constructor ‘[01m[Kexplore::Costmap2DClient::[01;32m[KCostmap2DClient[m[K(rclcpp::Node&, const tf2_ros::Buffer*)[m[K’:
+[01m[K/home/akram00/ros2_ws/src/m-explore-ros2/explore/src/costmap_client.cpp:90:22:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid rclcpp::[01;32m[Kspin_some[m[K(const node_interfaces::NodeBaseInterface::SharedPtr&)[m[K’ is deprecated: use SingleThreadedExecutor::spin_some instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   90 |     [01;35m[Krclcpp::spin_some(node_.get_node_base_interface())[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/lyrical/include/rclcpp/rclcpp/rclcpp.hpp:174[m[K,
+                 from [01m[K/opt/ros/lyrical/include/tf2_ros/tf2_ros/buffer_interface.hpp:50[m[K,
+                 from [01m[K/opt/ros/lyrical/include/tf2_ros/tf2_ros/buffer.hpp:46[m[K,
+                 from [01m[K/home/akram00/ros2_ws/src/m-explore-ros2/explore/include/explore/costmap_client.h:41[m[K,
+                 from [01m[K/home/akram00/ros2_ws/src/m-explore-ros2/explore/src/costmap_client.cpp:38[m[K:
+[01m[K/opt/ros/lyrical/include/rclcpp/rclcpp/executors.hpp:91:1:[m[K [01;36m[Knote: [m[Kdeclared here
+   91 | [01;36m[Kspin_some[m[K(const rclcpp::node_interfaces::NodeBaseInterface::SharedPtr & node_ptr);
+      | [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/akram00/ros2_ws/src/m-explore-ros2/explore/src/costmap_client.cpp:124:22:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid rclcpp::[01;32m[Kspin_some[m[K(const node_interfaces::NodeBaseInterface::SharedPtr&)[m[K’ is deprecated: use SingleThreadedExecutor::spin_some instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  124 |     [01;35m[Krclcpp::spin_some(node_.get_node_base_interface())[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/lyrical/include/rclcpp/rclcpp/executors.hpp:91:1:[m[K [01;36m[Knote: [m[Kdeclared here
+   91 | [01;36m[Kspin_some[m[K(const rclcpp::node_interfaces::NodeBaseInterface::SharedPtr & node_ptr);
+      | [01;36m[K^~~~~~~~~[m[K

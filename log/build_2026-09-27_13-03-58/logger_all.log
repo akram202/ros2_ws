@@ -1,0 +1,398 @@
+[-1790510636684548096.000s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[-1790510636684548096.000s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7a9009c48050>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7a9009cee7b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7a9009cee7b0>>, mixin_verb=('build',))
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[-1790510636684548096.000s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/akram00/ros2_ws'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['ignore', 'ignore_ament_install']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'ignore'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'ignore_ament_install'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['colcon_pkg']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'colcon_pkg'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['colcon_meta']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'colcon_meta'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['ros']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'ros'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['cmake', 'python']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'cmake'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'python'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extensions ['python_setup_py']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2) by extension 'python_setup_py'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extensions ['ignore', 'ignore_ament_install']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extension 'ignore'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extension 'ignore_ament_install'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extensions ['colcon_pkg']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extension 'colcon_pkg'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extensions ['colcon_meta']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extension 'colcon_meta'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extensions ['ros']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore) by extension 'ros'
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/m-explore-ros2/explore' with type 'ros.ament_cmake' and name 'explore_lite'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extensions ['ignore', 'ignore_ament_install']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extension 'ignore'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extension 'ignore_ament_install'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extensions ['colcon_pkg']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extension 'colcon_pkg'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extensions ['colcon_meta']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extension 'colcon_meta'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extensions ['ros']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/explore_lite_msgs) by extension 'ros'
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/m-explore-ros2/explore_lite_msgs' with type 'ros.ament_cmake' and name 'explore_lite_msgs'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extensions ['ignore', 'ignore_ament_install']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) by extension 'ignore'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/m-explore-ros2/map_merge) ignored
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_cleaner_sim) by extensions ['ignore', 'ignore_ament_install']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_cleaner_sim) by extension 'ignore'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_cleaner_sim) by extension 'ignore_ament_install'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_cleaner_sim) by extensions ['colcon_pkg']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_cleaner_sim) by extension 'colcon_pkg'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_cleaner_sim) by extensions ['colcon_meta']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_cleaner_sim) by extension 'colcon_meta'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_cleaner_sim) by extensions ['ros']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_cleaner_sim) by extension 'ros'
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_cleaner_sim' with type 'ros.ament_cmake' and name 'robot_cleaner_sim'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extensions ['ignore', 'ignore_ament_install']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'ignore'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'ignore_ament_install'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extensions ['colcon_pkg']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'colcon_pkg'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extensions ['colcon_meta']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'colcon_meta'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extensions ['ros']
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'ros'
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/slam_toolbox' with type 'ros.ament_cmake' and name 'slam_toolbox'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[-1790510636684548096.000s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 403 installed packages in /opt/ros/lyrical
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[-1790510636684548096.000s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'slam_toolbox' is in: /opt/ros/lyrical
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding slam_toolbox
+
+This may be promoted to an error in a future release of colcon-override-check.
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_args' from command line to 'None'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_target' from command line to 'None'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'explore_lite_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.verb:Building package 'explore_lite_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/akram00/ros2_ws/build/explore_lite_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/akram00/ros2_ws/install/explore_lite_msgs', 'merge_install': False, 'path': '/home/akram00/ros2_ws/src/m-explore-ros2/explore_lite_msgs', 'symlink_install': True, 'test_result_base': None}
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'robot_cleaner_sim' build argument 'cmake_args' from command line to 'None'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'robot_cleaner_sim' build argument 'cmake_target' from command line to 'None'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'robot_cleaner_sim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'robot_cleaner_sim' build argument 'cmake_clean_cache' from command line to 'False'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'robot_cleaner_sim' build argument 'cmake_clean_first' from command line to 'False'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'robot_cleaner_sim' build argument 'cmake_force_configure' from command line to 'False'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'robot_cleaner_sim' build argument 'ament_cmake_args' from command line to 'None'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'robot_cleaner_sim' build argument 'catkin_cmake_args' from command line to 'None'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'robot_cleaner_sim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.verb:Building package 'robot_cleaner_sim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/akram00/ros2_ws/build/robot_cleaner_sim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/akram00/ros2_ws/install/robot_cleaner_sim', 'merge_install': False, 'path': '/home/akram00/ros2_ws/src/robot_cleaner_sim', 'symlink_install': True, 'test_result_base': None}
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_args' from command line to 'None'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_target' from command line to 'None'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_clean_cache' from command line to 'False'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_clean_first' from command line to 'False'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_force_configure' from command line to 'False'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'ament_cmake_args' from command line to 'None'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'catkin_cmake_args' from command line to 'None'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.verb:Building package 'slam_toolbox' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/akram00/ros2_ws/build/slam_toolbox', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/akram00/ros2_ws/install/slam_toolbox', 'merge_install': False, 'path': '/home/akram00/ros2_ws/src/slam_toolbox', 'symlink_install': True, 'test_result_base': None}
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_args' from command line to 'None'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_target' from command line to 'None'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_clean_cache' from command line to 'False'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_clean_first' from command line to 'False'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'cmake_force_configure' from command line to 'False'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'ament_cmake_args' from command line to 'None'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'catkin_cmake_args' from command line to 'None'
+[-1790510636684548096.000s] Level 5:colcon.colcon_core.verb:set package 'explore_lite' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.verb:Building package 'explore_lite' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/akram00/ros2_ws/build/explore_lite', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/akram00/ros2_ws/install/explore_lite', 'merge_install': False, 'path': '/home/akram00/ros2_ws/src/m-explore-ros2/explore', 'symlink_install': True, 'test_result_base': None}
+[-1790510636684548096.000s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[-1790510636684548096.000s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[-1790510636684548096.000s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/akram00/ros2_ws/src/m-explore-ros2/explore_lite_msgs' with build type 'ament_cmake'
+[-1790510636684548096.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/akram00/ros2_ws/src/m-explore-ros2/explore_lite_msgs'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1790510636684548096.000s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/akram00/ros2_ws/src/robot_cleaner_sim' with build type 'ament_cmake'
+[-1790510636684548096.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/akram00/ros2_ws/src/robot_cleaner_sim'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1790510636684548096.000s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/akram00/ros2_ws/src/slam_toolbox' with build type 'ament_cmake'
+[-1790510636684548096.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/akram00/ros2_ws/src/slam_toolbox'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/akram00/ros2_ws/build/explore_lite_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/akram00/ros2_ws/src/m-explore-ros2/explore_lite_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/akram00/ros2_ws/install/explore_lite_msgs
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/akram00/ros2_ws/build/robot_cleaner_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/akram00/ros2_ws/src/robot_cleaner_sim -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/akram00/ros2_ws/install/robot_cleaner_sim
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/akram00/ros2_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/akram00/ros2_ws/src/slam_toolbox -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/akram00/ros2_ws/install/slam_toolbox
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/akram00/ros2_ws/build/robot_cleaner_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/akram00/ros2_ws/src/robot_cleaner_sim -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/akram00/ros2_ws/install/robot_cleaner_sim
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/akram00/ros2_ws/build/robot_cleaner_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/akram00/ros2_ws/build/robot_cleaner_sim -- -j8 -l8
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/akram00/ros2_ws/build/robot_cleaner_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/akram00/ros2_ws/build/robot_cleaner_sim -- -j8 -l8
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/akram00/ros2_ws/build/robot_cleaner_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/akram00/ros2_ws/build/robot_cleaner_sim
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_cleaner_sim)
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/akram00/ros2_ws/build/robot_cleaner_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/akram00/ros2_ws/build/robot_cleaner_sim
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/robot_cleaner_sim' for CMake module files
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/robot_cleaner_sim' for CMake config files
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_cleaner_sim', 'cmake_prefix_path')
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/hook/cmake_prefix_path.ps1'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/hook/cmake_prefix_path.dsv'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/hook/cmake_prefix_path.sh'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/robot_cleaner_sim/lib'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/robot_cleaner_sim/bin'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/robot_cleaner_sim/lib/pkgconfig/robot_cleaner_sim.pc'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/robot_cleaner_sim/lib/python3.14/site-packages'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/robot_cleaner_sim/bin'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/package.ps1'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/package.dsv'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/package.sh'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/package.bash'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/package.zsh'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/akram00/ros2_ws/install/robot_cleaner_sim/share/colcon-core/packages/robot_cleaner_sim)
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_cleaner_sim)
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/robot_cleaner_sim' for CMake module files
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/robot_cleaner_sim' for CMake config files
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_cleaner_sim', 'cmake_prefix_path')
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/hook/cmake_prefix_path.ps1'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/hook/cmake_prefix_path.dsv'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/hook/cmake_prefix_path.sh'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/robot_cleaner_sim/lib'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/robot_cleaner_sim/bin'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/robot_cleaner_sim/lib/pkgconfig/robot_cleaner_sim.pc'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/robot_cleaner_sim/lib/python3.14/site-packages'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/robot_cleaner_sim/bin'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/package.ps1'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/package.dsv'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/package.sh'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/package.bash'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/robot_cleaner_sim/share/robot_cleaner_sim/package.zsh'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/akram00/ros2_ws/install/robot_cleaner_sim/share/colcon-core/packages/robot_cleaner_sim)
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/akram00/ros2_ws/build/explore_lite_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/akram00/ros2_ws/src/m-explore-ros2/explore_lite_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/akram00/ros2_ws/install/explore_lite_msgs
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/akram00/ros2_ws/build/explore_lite_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/akram00/ros2_ws/build/explore_lite_msgs -- -j8 -l8
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/akram00/ros2_ws/build/explore_lite_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/akram00/ros2_ws/build/explore_lite_msgs -- -j8 -l8
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/akram00/ros2_ws/build/explore_lite_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/akram00/ros2_ws/build/explore_lite_msgs
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(explore_lite_msgs)
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite_msgs' for CMake module files
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/akram00/ros2_ws/build/explore_lite_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/akram00/ros2_ws/build/explore_lite_msgs
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite_msgs' for CMake config files
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite_msgs', 'cmake_prefix_path')
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.ps1'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.dsv'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.sh'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite_msgs/lib'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite_msgs', 'ld_library_path_lib')
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.ps1'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.dsv'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.sh'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite_msgs/bin'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite_msgs/lib/pkgconfig/explore_lite_msgs.pc'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite_msgs/lib/python3.14/site-packages'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite_msgs', 'pythonpath')
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/pythonpath.ps1'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/pythonpath.dsv'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/pythonpath.sh'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite_msgs/bin'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.ps1'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.dsv'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.sh'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.bash'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.zsh'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/akram00/ros2_ws/install/explore_lite_msgs/share/colcon-core/packages/explore_lite_msgs)
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(explore_lite_msgs)
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite_msgs' for CMake module files
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite_msgs' for CMake config files
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite_msgs', 'cmake_prefix_path')
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.ps1'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.dsv'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/cmake_prefix_path.sh'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite_msgs/lib'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite_msgs', 'ld_library_path_lib')
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.ps1'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.dsv'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/ld_library_path_lib.sh'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite_msgs/bin'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite_msgs/lib/pkgconfig/explore_lite_msgs.pc'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite_msgs/lib/python3.14/site-packages'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite_msgs', 'pythonpath')
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/pythonpath.ps1'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/pythonpath.dsv'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/hook/pythonpath.sh'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite_msgs/bin'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.ps1'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.dsv'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.sh'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.bash'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.zsh'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/akram00/ros2_ws/install/explore_lite_msgs/share/colcon-core/packages/explore_lite_msgs)
+[-1790510636684548096.000s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/akram00/ros2_ws/src/m-explore-ros2/explore' with build type 'ament_cmake'
+[-1790510636684548096.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/akram00/ros2_ws/src/m-explore-ros2/explore'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/akram00/ros2_ws/build/explore_lite': AMENT_PREFIX_PATH=/home/akram00/ros2_ws/install/explore_lite_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/akram00/ros2_ws/install/explore_lite_msgs:/opt/ros/lyrical/opt/gz_sim_vendor:/opt/ros/lyrical/opt/gz_sensors_vendor:/opt/ros/lyrical/opt/gz_gui_vendor:/opt/ros/lyrical/opt/gz_transport_vendor:/opt/ros/lyrical/opt/gz_physics_vendor:/opt/ros/lyrical/opt/sdformat_vendor:/opt/ros/lyrical/opt/gz_rendering_vendor:/opt/ros/lyrical/opt/gz_plugin_vendor:/opt/ros/lyrical/opt/gz_fuel_tools_vendor:/opt/ros/lyrical/opt/gz_msgs_vendor:/opt/ros/lyrical/opt/gz_common_vendor:/opt/ros/lyrical/opt/gz_math_vendor:/opt/ros/lyrical/opt/gz_utils_vendor:/opt/ros/lyrical/opt/gz_tools_vendor:/opt/ros/lyrical/opt/gz_ogre_next_vendor:/opt/ros/lyrical/opt/gz_dartsim_vendor:/opt/ros/lyrical/opt/gz_cmake_vendor:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/akram00/ros2_ws/install/explore_lite_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/akram00/ros2_ws/install/explore_lite_msgs/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/cmake /home/akram00/ros2_ws/src/m-explore-ros2/explore -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/akram00/ros2_ws/install/explore_lite
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/akram00/ros2_ws/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/akram00/ros2_ws/src/slam_toolbox -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/akram00/ros2_ws/install/slam_toolbox
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/akram00/ros2_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/akram00/ros2_ws/build/slam_toolbox -- -j8 -l8
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/akram00/ros2_ws/build/explore_lite' returned '0': AMENT_PREFIX_PATH=/home/akram00/ros2_ws/install/explore_lite_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/akram00/ros2_ws/install/explore_lite_msgs:/opt/ros/lyrical/opt/gz_sim_vendor:/opt/ros/lyrical/opt/gz_sensors_vendor:/opt/ros/lyrical/opt/gz_gui_vendor:/opt/ros/lyrical/opt/gz_transport_vendor:/opt/ros/lyrical/opt/gz_physics_vendor:/opt/ros/lyrical/opt/sdformat_vendor:/opt/ros/lyrical/opt/gz_rendering_vendor:/opt/ros/lyrical/opt/gz_plugin_vendor:/opt/ros/lyrical/opt/gz_fuel_tools_vendor:/opt/ros/lyrical/opt/gz_msgs_vendor:/opt/ros/lyrical/opt/gz_common_vendor:/opt/ros/lyrical/opt/gz_math_vendor:/opt/ros/lyrical/opt/gz_utils_vendor:/opt/ros/lyrical/opt/gz_tools_vendor:/opt/ros/lyrical/opt/gz_ogre_next_vendor:/opt/ros/lyrical/opt/gz_dartsim_vendor:/opt/ros/lyrical/opt/gz_cmake_vendor:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/akram00/ros2_ws/install/explore_lite_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/akram00/ros2_ws/install/explore_lite_msgs/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/cmake /home/akram00/ros2_ws/src/m-explore-ros2/explore -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/akram00/ros2_ws/install/explore_lite
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/akram00/ros2_ws/build/explore_lite': AMENT_PREFIX_PATH=/home/akram00/ros2_ws/install/explore_lite_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/akram00/ros2_ws/install/explore_lite_msgs:/opt/ros/lyrical/opt/gz_sim_vendor:/opt/ros/lyrical/opt/gz_sensors_vendor:/opt/ros/lyrical/opt/gz_gui_vendor:/opt/ros/lyrical/opt/gz_transport_vendor:/opt/ros/lyrical/opt/gz_physics_vendor:/opt/ros/lyrical/opt/sdformat_vendor:/opt/ros/lyrical/opt/gz_rendering_vendor:/opt/ros/lyrical/opt/gz_plugin_vendor:/opt/ros/lyrical/opt/gz_fuel_tools_vendor:/opt/ros/lyrical/opt/gz_msgs_vendor:/opt/ros/lyrical/opt/gz_common_vendor:/opt/ros/lyrical/opt/gz_math_vendor:/opt/ros/lyrical/opt/gz_utils_vendor:/opt/ros/lyrical/opt/gz_tools_vendor:/opt/ros/lyrical/opt/gz_ogre_next_vendor:/opt/ros/lyrical/opt/gz_dartsim_vendor:/opt/ros/lyrical/opt/gz_cmake_vendor:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/akram00/ros2_ws/install/explore_lite_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/akram00/ros2_ws/install/explore_lite_msgs/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/akram00/ros2_ws/build/explore_lite -- -j8 -l8
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/akram00/ros2_ws/build/explore_lite' returned '0': AMENT_PREFIX_PATH=/home/akram00/ros2_ws/install/explore_lite_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/akram00/ros2_ws/install/explore_lite_msgs:/opt/ros/lyrical/opt/gz_sim_vendor:/opt/ros/lyrical/opt/gz_sensors_vendor:/opt/ros/lyrical/opt/gz_gui_vendor:/opt/ros/lyrical/opt/gz_transport_vendor:/opt/ros/lyrical/opt/gz_physics_vendor:/opt/ros/lyrical/opt/sdformat_vendor:/opt/ros/lyrical/opt/gz_rendering_vendor:/opt/ros/lyrical/opt/gz_plugin_vendor:/opt/ros/lyrical/opt/gz_fuel_tools_vendor:/opt/ros/lyrical/opt/gz_msgs_vendor:/opt/ros/lyrical/opt/gz_common_vendor:/opt/ros/lyrical/opt/gz_math_vendor:/opt/ros/lyrical/opt/gz_utils_vendor:/opt/ros/lyrical/opt/gz_tools_vendor:/opt/ros/lyrical/opt/gz_ogre_next_vendor:/opt/ros/lyrical/opt/gz_dartsim_vendor:/opt/ros/lyrical/opt/gz_cmake_vendor:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/akram00/ros2_ws/install/explore_lite_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/akram00/ros2_ws/install/explore_lite_msgs/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/akram00/ros2_ws/build/explore_lite -- -j8 -l8
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/akram00/ros2_ws/build/explore_lite': AMENT_PREFIX_PATH=/home/akram00/ros2_ws/install/explore_lite_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/akram00/ros2_ws/install/explore_lite_msgs:/opt/ros/lyrical/opt/gz_sim_vendor:/opt/ros/lyrical/opt/gz_sensors_vendor:/opt/ros/lyrical/opt/gz_gui_vendor:/opt/ros/lyrical/opt/gz_transport_vendor:/opt/ros/lyrical/opt/gz_physics_vendor:/opt/ros/lyrical/opt/sdformat_vendor:/opt/ros/lyrical/opt/gz_rendering_vendor:/opt/ros/lyrical/opt/gz_plugin_vendor:/opt/ros/lyrical/opt/gz_fuel_tools_vendor:/opt/ros/lyrical/opt/gz_msgs_vendor:/opt/ros/lyrical/opt/gz_common_vendor:/opt/ros/lyrical/opt/gz_math_vendor:/opt/ros/lyrical/opt/gz_utils_vendor:/opt/ros/lyrical/opt/gz_tools_vendor:/opt/ros/lyrical/opt/gz_ogre_next_vendor:/opt/ros/lyrical/opt/gz_dartsim_vendor:/opt/ros/lyrical/opt/gz_cmake_vendor:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/akram00/ros2_ws/install/explore_lite_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/akram00/ros2_ws/install/explore_lite_msgs/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/akram00/ros2_ws/build/explore_lite
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(explore_lite)
+[-1790510636684548096.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/akram00/ros2_ws/build/explore_lite' returned '0': AMENT_PREFIX_PATH=/home/akram00/ros2_ws/install/explore_lite_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/akram00/ros2_ws/install/explore_lite_msgs:/opt/ros/lyrical/opt/gz_sim_vendor:/opt/ros/lyrical/opt/gz_sensors_vendor:/opt/ros/lyrical/opt/gz_gui_vendor:/opt/ros/lyrical/opt/gz_transport_vendor:/opt/ros/lyrical/opt/gz_physics_vendor:/opt/ros/lyrical/opt/sdformat_vendor:/opt/ros/lyrical/opt/gz_rendering_vendor:/opt/ros/lyrical/opt/gz_plugin_vendor:/opt/ros/lyrical/opt/gz_fuel_tools_vendor:/opt/ros/lyrical/opt/gz_msgs_vendor:/opt/ros/lyrical/opt/gz_common_vendor:/opt/ros/lyrical/opt/gz_math_vendor:/opt/ros/lyrical/opt/gz_utils_vendor:/opt/ros/lyrical/opt/gz_tools_vendor:/opt/ros/lyrical/opt/gz_ogre_next_vendor:/opt/ros/lyrical/opt/gz_dartsim_vendor:/opt/ros/lyrical/opt/gz_cmake_vendor:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/akram00/ros2_ws/install/explore_lite_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/akram00/ros2_ws/install/explore_lite_msgs/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/akram00/ros2_ws/build/explore_lite
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite' for CMake module files
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite' for CMake config files
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite', 'cmake_prefix_path')
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.ps1'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akram00/ros2_ws/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.dsv'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.sh'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite/lib'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite/bin'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite/lib/pkgconfig/explore_lite.pc'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite/lib/python3.14/site-packages'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite/bin'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/explore_lite/share/explore_lite/package.ps1'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/akram00/ros2_ws/install/explore_lite/share/explore_lite/package.dsv'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/explore_lite/share/explore_lite/package.sh'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/explore_lite/share/explore_lite/package.bash'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/explore_lite/share/explore_lite/package.zsh'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/akram00/ros2_ws/install/explore_lite/share/colcon-core/packages/explore_lite)
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(explore_lite)
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite' for CMake module files
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite' for CMake config files
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('explore_lite', 'cmake_prefix_path')
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.ps1'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akram00/ros2_ws/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.dsv'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/explore_lite/share/explore_lite/hook/cmake_prefix_path.sh'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite/lib'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite/bin'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite/lib/pkgconfig/explore_lite.pc'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite/lib/python3.14/site-packages'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/explore_lite/bin'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/explore_lite/share/explore_lite/package.ps1'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/akram00/ros2_ws/install/explore_lite/share/explore_lite/package.dsv'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/explore_lite/share/explore_lite/package.sh'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/explore_lite/share/explore_lite/package.bash'
+[-1790510636684548096.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/explore_lite/share/explore_lite/package.zsh'
+[-1790510636684548096.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/akram00/ros2_ws/install/explore_lite/share/colcon-core/packages/explore_lite)
+[-1790510636684547328.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/akram00/ros2_ws/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/akram00/ros2_ws/build/slam_toolbox -- -j8 -l8
+[-1790510636684547328.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/akram00/ros2_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/akram00/ros2_ws/build/slam_toolbox
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_toolbox)
+[-1790510636684547328.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/akram00/ros2_ws/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/akram00/ros2_ws/build/slam_toolbox
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/slam_toolbox' for CMake module files
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/slam_toolbox' for CMake config files
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_toolbox', 'cmake_prefix_path')
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.ps1'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.dsv'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.sh'
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/slam_toolbox/lib'
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_toolbox', 'ld_library_path_lib')
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.ps1'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.dsv'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.sh'
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/slam_toolbox/bin'
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/slam_toolbox/lib/pkgconfig/slam_toolbox.pc'
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/slam_toolbox/lib/python3.14/site-packages'
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_toolbox', 'pythonpath')
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/pythonpath.ps1'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/pythonpath.dsv'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/pythonpath.sh'
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/slam_toolbox/bin'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.ps1'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.dsv'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.sh'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.bash'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.zsh'
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/akram00/ros2_ws/install/slam_toolbox/share/colcon-core/packages/slam_toolbox)
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_toolbox)
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/slam_toolbox' for CMake module files
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/slam_toolbox' for CMake config files
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_toolbox', 'cmake_prefix_path')
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.ps1'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.dsv'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/cmake_prefix_path.sh'
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/slam_toolbox/lib'
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_toolbox', 'ld_library_path_lib')
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.ps1'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.dsv'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/ld_library_path_lib.sh'
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/slam_toolbox/bin'
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/slam_toolbox/lib/pkgconfig/slam_toolbox.pc'
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/slam_toolbox/lib/python3.14/site-packages'
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_toolbox', 'pythonpath')
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/pythonpath.ps1'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/pythonpath.dsv'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/hook/pythonpath.sh'
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.environment:checking '/home/akram00/ros2_ws/install/slam_toolbox/bin'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.ps1'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.dsv'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.sh'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.bash'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/akram00/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.zsh'
+[-1790510636684547328.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/akram00/ros2_ws/install/slam_toolbox/share/colcon-core/packages/slam_toolbox)
+[-1790510636684547328.000s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[-1790510636684547328.000s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[-1790510636684547328.000s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[-1790510636684547328.000s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[-1790510636684547328.000s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[-1790510636684547328.000s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[-1790510636684547328.000s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[-1790510636684547328.000s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/akram00/ros2_ws/install/local_setup.ps1'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/akram00/ros2_ws/install/_local_setup_util_ps1.py'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/akram00/ros2_ws/install/setup.ps1'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/akram00/ros2_ws/install/local_setup.sh'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/akram00/ros2_ws/install/_local_setup_util_sh.py'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/akram00/ros2_ws/install/setup.sh'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/akram00/ros2_ws/install/local_setup.bash'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/akram00/ros2_ws/install/setup.bash'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/akram00/ros2_ws/install/local_setup.zsh'
+[-1790510636684547328.000s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/akram00/ros2_ws/install/setup.zsh'

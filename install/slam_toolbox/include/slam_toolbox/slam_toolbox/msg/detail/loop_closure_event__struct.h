@@ -1,0 +1,1 @@
+/home/akram00/ros2_ws/build/slam_toolbox/rosidl_generator_c/slam_toolbox/msg/detail/loop_closure_event__struct.h

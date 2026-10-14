@@ -1,0 +1,1 @@
+/home/akram00/ros2_ws/build/robot_cleaner_sim/ament_cmake_environment_hooks/local_setup.sh
